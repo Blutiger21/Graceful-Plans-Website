@@ -47,8 +47,20 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Editorial Copy */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 border border-neutral-950 bg-neutral-950 text-white text-xs font-medium tracking-wide px-3.5 py-1.5 rounded-md">
-                <span>NSFAS Accredited for CUT Students — 10 NSFAS rooms per house</span>
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-2.5 border border-neutral-200 bg-neutral-50 text-neutral-950 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-md">
+                  <img
+                    src="/Graceful%20Plans%20New%20Season%20Properties.png"
+                    alt="Graceful Plans New Season Properties Logo"
+                    width={28}
+                    height={28}
+                    className="w-7 h-7 object-contain"
+                  />
+                  <span>Graceful Plans</span>
+                </div>
+                <div className="inline-flex items-center gap-2 border border-neutral-950 bg-neutral-950 text-white text-xs font-medium tracking-wide px-3.5 py-1.5 rounded-md">
+                  <span>NSFAS Accredited for CUT Students — 10 NSFAS rooms per house</span>
+                </div>
               </div>
 
               <h1 className="hero-headline font-bold text-neutral-950">

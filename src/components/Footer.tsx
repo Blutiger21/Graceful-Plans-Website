@@ -16,13 +16,25 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           {/* Col 1: Brand Summary */}
           <div className="md:col-span-5 space-y-4">
-            <div>
-              <span className="block text-base font-bold tracking-tight uppercase text-white">
-                {CONTACT_DETAILS.brandName}
-              </span>
-              <span className="block text-xs uppercase tracking-widest text-neutral-400 mt-0.5">
-                Universitas • Bloemfontein
-              </span>
+            <div className="flex items-center gap-3">
+              <div className="w-13 h-13 rounded-md bg-white p-1 flex items-center justify-center shrink-0">
+                <img
+                  src="/Graceful%20Plans%20New%20Season%20Properties.png"
+                  alt="Graceful Plans New Season Properties Logo"
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <span className="block text-base font-bold tracking-tight uppercase text-white">
+                  {CONTACT_DETAILS.brandName}
+                </span>
+                <span className="block text-xs uppercase tracking-widest text-neutral-400 mt-0.5">
+                  Universitas • Bloemfontein
+                </span>
+              </div>
             </div>
 
             <p className="text-neutral-400 text-sm leading-relaxed max-w-sm">

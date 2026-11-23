@@ -118,9 +118,16 @@ export default async function PropertyDetailPage({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-7 space-y-5">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500">
-                  {property.suburb}, Free State
-                </p>
+                <div className="inline-flex items-center gap-2.5 text-xs font-bold uppercase tracking-widest text-neutral-950 mb-2">
+                  <img
+                    src="/Graceful%20Plans%20New%20Season%20Properties.png"
+                    alt="Graceful Plans New Season Properties Logo"
+                    width={28}
+                    height={28}
+                    className="w-7 h-7 object-contain"
+                  />
+                  <span>Graceful Plans • {property.suburb}, Free State</span>
+                </div>
                 <h1 className="hero-headline font-bold text-neutral-950 mt-1">
                   {property.address}
                 </h1>
